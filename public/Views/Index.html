@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body ng-app="bladeTest">
+<script src="js/controllers/default.js"></script>
+
+<div id="app">
+<form name="loginForm" method="post" action="/v1/auth/login">
+    <table width="20%" bgcolor="0099CC" align="center">
+
+        <tr>
+            <td colspan=2><center><font size=4><b>Login</b></font></center></td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" size=25 name="email"></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type="Password" size=25 name="password"></td>
+        </tr>
+
+        <tr>
+            <td ><input type="Reset"></td>
+            <td><input type="submit" ng-click="" value="Login"></td>
+        </tr>
+
+    </table>
+</form>
+    <a href="./register"><button> Register</button></a>
+
+</div>
+
+
+</body>
+</html>
